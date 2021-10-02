@@ -23,6 +23,15 @@ namespace Inheritance.Lab
       cat.Eat();
       cat.Meow();
 
+      RandomList list = new RandomList();
+      list.Add("Diablo");
+      list.Add("Baal");
+      list.Add("Andariel");
+      list.Add("Melphisto");
+      list.Add("Duriel");
+
+      Console.WriteLine(list.RandomString());
+
       Console.ReadLine();
 
     }
