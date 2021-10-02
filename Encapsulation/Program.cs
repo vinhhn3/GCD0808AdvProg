@@ -15,10 +15,18 @@ namespace Encapsulation
 
       Console.WriteLine(monster.GetLocation());
       Console.WriteLine(monster.Location);
+      hero.Level = 99;
 
       //monster.Location = "Heaven";
       //monster.Location = "123";
       //monster.Skill = "Cold";
+
+      // VALIDATION
+      hero.Level = -100;
+      Console.WriteLine(hero.Level);
+
+      hero.Level = 100;
+      Console.WriteLine(hero.Level);
 
       Console.ReadLine();
 

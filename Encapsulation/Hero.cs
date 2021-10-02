@@ -10,7 +10,24 @@ namespace Encapsulation
     public int HP;
     public int Mana;
     public int AttackPoint;
-    public int Level;
+    private int _level;
+    public int Level
+    {
+      get { return _level; }
+      set
+      {
+        if (value < 1)
+        {
+          Console.WriteLine("Cannot set lower than 1");
+          _level = 1;
+        }
+        else
+        {
+          Console.WriteLine("Set Level DONE");
+          _level = value;
+        }
+      }
+    }
     public Dictionary<Item, int> Inventory;
 
     // Static Member => attribute of Class (not Object)
