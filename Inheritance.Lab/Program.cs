@@ -9,6 +9,7 @@ namespace Inheritance.Lab
       Animal animal = new Animal();
       Dog dog = new Dog();
       Puppy puppy = new Puppy();
+      Cat cat = new Cat();
       dog.Bark();
       dog.Bark();
       dog.Eat();
@@ -18,6 +19,9 @@ namespace Inheritance.Lab
       puppy.Eat();
       puppy.Bark();
       puppy.Weep();
+
+      cat.Eat();
+      cat.Meow();
 
       Console.ReadLine();
 
