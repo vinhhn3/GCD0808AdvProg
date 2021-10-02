@@ -12,7 +12,8 @@ namespace Inheritance
         fullName: "Diablo",
         hp: 123,
         defense: 100,
-        mana: 123);
+        mana: 123
+        );
 
       earthMonster_1.FullName = "Baal";
       earthMonster_1.Defense = 123;
