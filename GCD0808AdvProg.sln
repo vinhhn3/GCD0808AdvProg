@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction.OldestFamilyMem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstraction.CompanyRoster", "Abstraction.CompanyRoster\Abstraction.CompanyRoster.csproj", "{D31F9B2A-AF02-4045-A658-8A1DF089E109}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{0787ECCC-23CD-4C86-92E9-3E05A7722CA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D31F9B2A-AF02-4045-A658-8A1DF089E109}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D31F9B2A-AF02-4045-A658-8A1DF089E109}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D31F9B2A-AF02-4045-A658-8A1DF089E109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0787ECCC-23CD-4C86-92E9-3E05A7722CA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0787ECCC-23CD-4C86-92E9-3E05A7722CA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0787ECCC-23CD-4C86-92E9-3E05A7722CA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0787ECCC-23CD-4C86-92E9-3E05A7722CA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

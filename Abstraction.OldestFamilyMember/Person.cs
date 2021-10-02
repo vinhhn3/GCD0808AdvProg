@@ -22,7 +22,5 @@ namespace Abstraction.OldestFamilyMember
     {
       Console.WriteLine($"{Name} | {Age} years old ");
     }
-
-
   }
 }
