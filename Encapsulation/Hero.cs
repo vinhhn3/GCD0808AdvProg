@@ -64,8 +64,11 @@ namespace Encapsulation
 
     public void Attack(Monster monster)
     {
-      Console.WriteLine($"{FullName} is attacking {monster.FullName}");
-      var difference = AttackPoint - monster.Defense;
+      //monster.FullName = "Name changed inside Attack function";
+      //monster.Defense = 0;
+      //monster.HP = 0;
+      Console.WriteLine($"{FullName} is attacking {monster.GetFullName()}");
+      var difference = AttackPoint - monster.GetDefense();
       if (difference <= 0)
       {
         Console.WriteLine("No Effect ...");
@@ -73,8 +76,8 @@ namespace Encapsulation
       else
       {
         Console.WriteLine("Effected ...");
-        monster.HP = monster.HP - difference;
-        Console.WriteLine($"Current HP of {monster.FullName} is: {monster.HP} ");
+        monster.DecreaseHP(difference);
+        Console.WriteLine($"Current HP of {monster.GetFullName()} is: {monster.GetHP()} ");
       }
     }
 
