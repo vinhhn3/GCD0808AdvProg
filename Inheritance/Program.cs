@@ -22,6 +22,18 @@ namespace Inheritance
       earthMonster_1.PrintInfo();
       earthMonster_2.PrintInfo();
 
+      Monster monster = new Monster(fullName: "Andarial", hp: 400, defense: 100);
+      SeaMonster seaMonster = new SeaMonster(
+        fullName: "Duriel", hp: 500, defense: 150, color: "Black");
+
+      Hero paladin = new Hero("Paladin", 200, 100, 250);
+
+      paladin.Attack(monster);
+      paladin.Attack(earthMonster_1);
+      paladin.Attack(seaMonster);
+
+
+
       Console.ReadLine();
 
     }
