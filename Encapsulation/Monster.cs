@@ -7,8 +7,17 @@ namespace Encapsulation
     private string FullName;
     private int HP;
     private int Defense;
-    public string Location { get; private set; }
+    public string Location { get; protected set; }
+    protected string Skill;
 
+    public Monster(string fullName, int hP, int defense, string location, string skill)
+    {
+      FullName = fullName;
+      HP = hP;
+      Defense = defense;
+      Location = location;
+      Skill = skill;
+    }
 
     public Monster()
     {
@@ -16,15 +25,10 @@ namespace Encapsulation
       HP = -1;
       Defense = -1;
       Location = "N/A";
+      Skill = "N/A";
     }
 
-    public Monster(string fullName, int hp, int defense, string location)
-    {
-      FullName = fullName;
-      HP = hp;
-      Defense = defense;
-      Location = location;
-    }
+
     public void PrintInfo()
     {
       Console.WriteLine($"Name: {FullName} | HP: {HP} " +
