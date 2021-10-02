@@ -32,7 +32,13 @@ namespace Inheritance
       paladin.Attack(earthMonster_1);
       paladin.Attack(seaMonster);
 
+      // Parent class can be init as Child class
+      Monster monster_2 = new EarthMonster();
+      Monster monster_3 = new EarthMonster("Heriel", 100, 200, 300);
+      Monster monster_4 = new SeaMonster();
 
+      // Child class can't initialize as Parent class
+      //EarthMonster earthMonster_3 = new Monster();
 
       Console.ReadLine();
 
