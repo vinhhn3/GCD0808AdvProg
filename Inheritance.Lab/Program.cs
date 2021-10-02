@@ -8,14 +8,18 @@ namespace Inheritance.Lab
     {
       Animal animal = new Animal();
       Dog dog = new Dog();
+      Puppy puppy = new Puppy();
       dog.Bark();
       dog.Bark();
       dog.Eat();
 
       animal.Eat();
 
-      Console.ReadLine();
+      puppy.Eat();
+      puppy.Bark();
+      puppy.Weep();
 
+      Console.ReadLine();
 
     }
   }
