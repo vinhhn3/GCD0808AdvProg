@@ -14,5 +14,10 @@
     {
       Color = color;
     }
+
+    public override void SelfHealing()
+    {
+      HP = HP + 200;
+    }
   }
 }

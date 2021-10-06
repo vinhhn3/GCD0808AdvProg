@@ -22,13 +22,15 @@ namespace Inheritance
       earthMonster_1.PrintInfo();
       earthMonster_2.PrintInfo();
 
-      Monster monster = new Monster(fullName: "Andarial", hp: 400, defense: 100);
+      // Because class Monster is an abstract class, 
+      // we can't create object Monster
+      //Monster monster = new Monster(fullName: "Andarial", hp: 400, defense: 100);
       SeaMonster seaMonster = new SeaMonster(
         fullName: "Duriel", hp: 500, defense: 150, color: "Black");
 
       Hero paladin = new Hero("Paladin", 200, 100, 250);
 
-      paladin.Attack(monster);
+      //paladin.Attack(monster);
       paladin.Attack(earthMonster_1);
       paladin.Attack(seaMonster);
 
@@ -39,9 +41,18 @@ namespace Inheritance
 
       // Child class can't initialize as Parent class
       //EarthMonster earthMonster_3 = new Monster();
+      Console.WriteLine("Before SelfHealing");
+      earthMonster_1.PrintInfo();
+      seaMonster.PrintInfo();
+
+      Console.WriteLine("After SelfHealing");
+      earthMonster_1.SelfHealing();
+      seaMonster.SelfHealing();
+
+      earthMonster_1.PrintInfo();
+      seaMonster.PrintInfo();
 
       Console.ReadLine();
-
     }
   }
 }

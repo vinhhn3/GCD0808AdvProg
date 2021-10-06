@@ -2,7 +2,7 @@
 
 namespace Inheritance
 {
-  class Monster
+  abstract class Monster
   {
     public string FullName;
     public int HP;
@@ -26,5 +26,9 @@ namespace Inheritance
     {
       Console.WriteLine($"Name: {FullName} | HP: {HP} | Defense: {Defense}");
     }
+
+    // Abstract function: declare the function only without implementation
+    // Child classes will implement the function
+    public abstract void SelfHealing();
   }
 }

@@ -34,5 +34,10 @@
     {
       Mana = mana;
     }
+
+    public override void SelfHealing()
+    {
+      HP = HP + 100;
+    }
   }
 }
