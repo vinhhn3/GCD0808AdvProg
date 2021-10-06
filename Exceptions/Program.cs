@@ -6,51 +6,29 @@ namespace Exceptions
   {
     static void Main(string[] args)
     {
-      int a = int.Parse(Console.ReadLine());
-      int b = int.Parse(Console.ReadLine());
-      int result = 0;
-
       try
       {
-        result = a / b;
+        var result = Divide(10, 5);
+        Console.WriteLine(result);
       }
       catch (DivideByZeroException e)
       {
         Console.WriteLine(e.Message);
       }
 
-      Console.WriteLine(result);
+      Console.ReadKey();
 
-      string str = Console.ReadLine();
+    }
 
-      try
+    static int Divide(int a, int b)
+    {
+      if (b == 0)
       {
-        int.Parse(str);
+        throw new DivideByZeroException("Cannot divide Zero");
       }
 
-      catch (FormatException e)
-      {
-        Console.WriteLine(e.Message);
-      }
-
-      catch (OverflowException e)
-      {
-        Console.WriteLine(e.Message);
-      }
-      catch (Exception e)
-      {
-        Console.WriteLine(e.Message);
-      }
-      finally
-      {
-        Console.WriteLine("Code cleaned up ...");
-      }
-
-
-      Console.WriteLine("Code after try-catch-finally block");
-
-      Console.ReadLine();
-
+      var result = a / b;
+      return result;
     }
   }
 }
