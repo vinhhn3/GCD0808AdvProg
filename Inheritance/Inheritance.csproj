@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="EarthMonster.cs" />
     <Compile Include="Hero.cs" />
+    <Compile Include="ICharacter.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="Program.cs" />

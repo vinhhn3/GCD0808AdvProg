@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Inheritance
 {
-  class Hero
+  class Hero : ICharacter
   {
     // Properties
     public string FullName;
@@ -102,6 +102,12 @@ namespace Inheritance
       {
         Console.WriteLine($"{item.Key} | {item.Value}");
       }
+    }
+
+    public void Die()
+    {
+      HP = 0;
+      Console.WriteLine($"Hero {FullName} is dead ...");
     }
   }
 }

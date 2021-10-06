@@ -52,6 +52,9 @@ namespace Inheritance
       earthMonster_1.PrintInfo();
       seaMonster.PrintInfo();
 
+      earthMonster_1.Die();
+      paladin.Die();
+
       Console.ReadLine();
     }
   }
