@@ -14,12 +14,40 @@ namespace Exceptions
       {
         result = a / b;
       }
-      catch (Exception)
+      catch (DivideByZeroException e)
       {
-        Console.WriteLine("Cannot divide 0");
+        Console.WriteLine(e.Message);
       }
 
       Console.WriteLine(result);
+
+      string str = Console.ReadLine();
+
+      try
+      {
+        int.Parse(str);
+      }
+
+      catch (FormatException e)
+      {
+        Console.WriteLine(e.Message);
+      }
+
+      catch (OverflowException e)
+      {
+        Console.WriteLine(e.Message);
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine(e.Message);
+      }
+      finally
+      {
+        Console.WriteLine("Code cleaned up ...");
+      }
+
+
+      Console.WriteLine("Code after try-catch-finally block");
 
       Console.ReadLine();
 
