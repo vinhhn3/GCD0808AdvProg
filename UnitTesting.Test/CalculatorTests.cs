@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System.Linq;
 
 namespace UnitTesting.Test
 {
@@ -41,6 +42,33 @@ namespace UnitTesting.Test
 
       // Assert
       Assert.AreEqual(expectedResult, actualResult);
+    }
+
+    [Test]
+    public void GetOddNumbers_LimitIsGreaterThanZero_ReturnOddNumbers()
+    {
+      // Arrange
+
+      // Act
+      var actualResult = _cal.GetOddNumbers(5);
+
+      // Assert
+      Assert.That(actualResult, Is.Not.Empty);
+      Assert.AreEqual(actualResult.Count(), 3);
+      Assert.AreEqual(actualResult, new[] { 1, 3, 5 });
+    }
+
+    [Test]
+    public void GetOddNumbers_LimitIsEqualZero_ReturnEmptyArray()
+    {
+      // Arrange
+
+      // Act
+      var result = _cal.GetOddNumbers(0);
+
+      // Assert
+      Assert.That(result, Is.Empty);
+      Assert.AreEqual(result.Count(), 0);
     }
   }
 }
