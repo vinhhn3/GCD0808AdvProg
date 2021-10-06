@@ -55,6 +55,12 @@ namespace Inheritance
       earthMonster_1.Die();
       paladin.Die();
 
+      Player player = new Player("John");
+
+      player.Control(paladin);
+      player.Control(earthMonster_1);
+      player.Control(seaMonster);
+
       Console.ReadLine();
     }
   }
