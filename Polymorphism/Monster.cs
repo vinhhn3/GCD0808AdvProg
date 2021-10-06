@@ -24,7 +24,7 @@ namespace Polymorphism
       AttackPoint = attackPoint;
     }
 
-    public void Attack()
+    public virtual void Attack()
     {
       Console.WriteLine($"Monster {FullName} is attacking");
     }

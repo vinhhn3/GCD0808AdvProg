@@ -12,6 +12,9 @@ namespace Polymorphism
       monster.Attack("Super Nova"); // void
       Console.WriteLine(monster.Attack("Lighitng Fury", 10)); // string
 
+      SuperSaiyan saiyan = new SuperSaiyan("Songoku", 1000, 100);
+      saiyan.Attack();
+
       Console.ReadLine();
     }
   }
