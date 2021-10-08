@@ -31,9 +31,14 @@ namespace ATMSequenceDiagram
       else
       {
         Console.WriteLine($"Withdrawing {amount} from account {accountNumber}");
-        Accounts[accountNumber] = Accounts[accountNumber] - amount;
+        Decrease(accountNumber, amount);
         return true;
       }
+    }
+
+    public void Decrease(string accountNumber, decimal amount)
+    {
+      Accounts[accountNumber] = Accounts[accountNumber] - amount;
     }
   }
 }

@@ -17,7 +17,7 @@
     {
       if (atm.RequestWithdraw(accountNumber, amount))
       {
-        _balance = _balance + amount;
+        _balance += amount;
       }
     }
 
