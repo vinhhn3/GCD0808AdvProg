@@ -4,11 +4,13 @@
   {
     public string FullName;
     public Item Item;
+    public Skill Skill;
 
     public Hero(int hp, int attackPoint, string fullName)
       : base(hp, attackPoint)
     {
       FullName = fullName;
+      Skill = new Skill("Super Nova");
     }
 
     public Hero() { }

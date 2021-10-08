@@ -4,7 +4,7 @@
   {
     static void Main(string[] args)
     {
-      Hero hero = new Hero();
+      Hero hero = new Hero(100, 100, "Lich King");
       Monster monster = new Monster();
 
       hero.Attack(monster);
