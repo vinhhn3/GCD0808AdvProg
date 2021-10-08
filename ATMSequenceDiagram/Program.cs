@@ -13,7 +13,21 @@ namespace ATMSequenceDiagram
 
       ATM atm = new ATM(database);
 
-      Console.WriteLine(user.CheckBalance("123", atm));
+      //Console.WriteLine(user.CheckBalance("123", atm));
+      Console.WriteLine("Before Withdraw");
+      Console.WriteLine(user.GetBalance());
+      user.Withdraw("123", 50, atm);
+
+      Console.WriteLine("After withdraw");
+      Console.WriteLine(user.GetBalance());
+
+      Console.WriteLine("Before Withdraw");
+      Console.WriteLine(user.GetBalance());
+      user.Withdraw("456", 500, atm);
+
+      Console.WriteLine("After withdraw");
+      Console.WriteLine(user.GetBalance());
+
 
       Console.ReadKey();
     }

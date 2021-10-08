@@ -17,5 +17,10 @@
       var result = _database.GetBalance(accountNumber);
       return result;
     }
+
+    public bool RequestWithdraw(string accountNumber, decimal amount)
+    {
+      return _database.ProcessWithdraw(accountNumber, amount);
+    }
   }
 }

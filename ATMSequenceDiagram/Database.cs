@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ATMSequenceDiagram
 {
@@ -18,6 +19,21 @@ namespace ATMSequenceDiagram
     public void AddAccount(string accountNumber, decimal balance)
     {
       Accounts[accountNumber] = balance;
+    }
+
+    public bool ProcessWithdraw(string accountNumber, decimal amount)
+    {
+      if (amount > GetBalance(accountNumber))
+      {
+        Console.WriteLine("Cannot Withdraw ...");
+        return false;
+      }
+      else
+      {
+        Console.WriteLine($"Withdrawing {amount} from account {accountNumber}");
+        Accounts[accountNumber] = Accounts[accountNumber] - amount;
+        return true;
+      }
     }
   }
 }
