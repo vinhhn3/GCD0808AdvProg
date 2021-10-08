@@ -9,6 +9,9 @@
 
       hero.Attack(monster);
       monster.Attack(hero);
+
+      Item sword = new Item("sword");
+      hero.PickUp(sword);
     }
   }
 }

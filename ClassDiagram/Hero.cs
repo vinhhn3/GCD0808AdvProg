@@ -3,6 +3,7 @@
   class Hero : Character
   {
     public string FullName;
+    public Item Item;
 
     public Hero(int hp, int attackPoint, string fullName)
       : base(hp, attackPoint)
@@ -15,6 +16,11 @@
     public void Attack(Monster monster)
     {
 
+    }
+
+    public void PickUp(Item item)
+    {
+      Item = item;
     }
   }
 }
