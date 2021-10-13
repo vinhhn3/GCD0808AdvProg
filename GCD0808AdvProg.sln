@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATMSequenceDiagram", "ATMSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassDiagram", "ClassDiagram\ClassDiagram.csproj", "{67931047-F533-49AE-B273-C367DB42DDD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{296677A2-28C8-47E4-A4DD-97D80EC78542}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{67931047-F533-49AE-B273-C367DB42DDD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67931047-F533-49AE-B273-C367DB42DDD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67931047-F533-49AE-B273-C367DB42DDD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{296677A2-28C8-47E4-A4DD-97D80EC78542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296677A2-28C8-47E4-A4DD-97D80EC78542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296677A2-28C8-47E4-A4DD-97D80EC78542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296677A2-28C8-47E4-A4DD-97D80EC78542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
