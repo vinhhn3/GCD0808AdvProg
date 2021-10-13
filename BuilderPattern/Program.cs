@@ -13,12 +13,17 @@ namespace BuilderPattern
       // Build Car
       vehiculeBuilder = new CarBuilder();
       shop.Construct(vehiculeBuilder);
-      vehiculeBuilder.Vehicule().Show();
+      vehiculeBuilder.Vehicule().Show(); // car object
 
       // Build Scooter
       vehiculeBuilder = new ScooterBuilder();
       shop.Construct(vehiculeBuilder);
-      vehiculeBuilder.Vehicule().Show();
+      vehiculeBuilder.Vehicule().Show();  // scooter object
+
+      // Build Tesla
+      vehiculeBuilder = new TeslaBuilder();
+      shop.Construct(vehiculeBuilder);
+      vehiculeBuilder.Vehicule().Show();  // Tesla object
 
       Console.ReadLine();
     }
