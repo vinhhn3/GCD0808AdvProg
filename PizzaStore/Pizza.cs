@@ -15,12 +15,38 @@ namespace PizzaStore
 
     protected Dictionary<ToppingType, List<Topping>> toppings;
 
-    public abstract double GetCalorie();
-    public abstract double GetPrice();
+    public double GetCalorie()
+    {
+      double totalCalorie = 0;
+      if (size == PizzaSize.Family)
+      {
+        totalCalorie = calorie * 1.95;
+      }
+      else
+      {
+        totalCalorie = calorie;
+      }
+
+      return totalCalorie + GetToppingsCalorie();
+    }
+    public double GetPrice()
+    {
+      double totalPrice = 0;
+      if (size == PizzaSize.Family)
+      {
+        totalPrice = price + 4.15;
+      }
+      else
+      {
+        totalPrice = price;
+      }
+
+      return totalPrice + GetToppingsPrice();
+    }
 
     public void AddTopping(ToppingType type)
     {
-      if (toppings[type] == null)
+      if (!toppings.ContainsKey(type))
       {
         toppings.Add(type, new List<Topping>());
         toppings[type].Add(new Topping(type));
@@ -29,6 +55,34 @@ namespace PizzaStore
       {
         toppings[type].Add(new Topping(type));
       }
+    }
+
+    public double GetToppingsPrice()
+    {
+      double toppingsPrice = 0;
+      foreach (var toppingType in toppings)
+      {
+        foreach (var topping in toppingType.Value)
+        {
+          toppingsPrice = toppingsPrice + topping.Price;
+        }
+      }
+
+      return toppingsPrice;
+    }
+
+    public double GetToppingsCalorie()
+    {
+      double toppingsCalorie = 0;
+      foreach (var toppingType in toppings)
+      {
+        foreach (var topping in toppingType.Value)
+        {
+          toppingsCalorie = toppingsCalorie + topping.Calorie;
+        }
+      }
+
+      return toppingsCalorie;
     }
   }
 }
