@@ -31,7 +31,7 @@ namespace PizzaStore
     }
     public virtual double GetPrice()
     {
-      double totalPrice = 0;
+      double totalPrice;
       if (size == PizzaSize.Family)
       {
         totalPrice = price + 4.15;
