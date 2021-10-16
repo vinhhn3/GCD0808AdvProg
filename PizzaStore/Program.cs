@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PizzaStore
 {
@@ -10,6 +6,13 @@ namespace PizzaStore
   {
     static void Main(string[] args)
     {
+      var margheritaPizza = new MargheritaPizza(PizzaSize.Family);
+
+      Console.WriteLine("Price " + margheritaPizza.GetPrice());
+      Console.WriteLine("Calorie " + margheritaPizza.GetCalorie());
+
+      Console.ReadLine();
+
     }
   }
 }
