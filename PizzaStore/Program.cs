@@ -20,6 +20,10 @@ namespace PizzaStore
       Console.WriteLine("Price " + salamiPizza.GetPrice());
       Console.WriteLine("Calorie " + salamiPizza.GetCalorie());
 
+      var drink = new Drink(DrinkType.Lemonade);
+
+      var shirt = new Franchise(FranchiseType.Shirt);
+
 
 
       Console.ReadLine();

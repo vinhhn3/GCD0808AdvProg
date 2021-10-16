@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Drink.cs" />
     <Compile Include="DrinkType.cs" />
+    <Compile Include="Franchise.cs" />
+    <Compile Include="FranchiseType.cs" />
     <Compile Include="HawaiianPizza.cs" />
     <Compile Include="MargheritaPizza.cs" />
     <Compile Include="Pizza.cs" />
