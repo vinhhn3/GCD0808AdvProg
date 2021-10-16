@@ -15,7 +15,7 @@ namespace PizzaStore
 
     protected Dictionary<ToppingType, List<Topping>> toppings;
 
-    public double GetCalorie()
+    public virtual double GetCalorie()
     {
       double totalCalorie = 0;
       if (size == PizzaSize.Family)
@@ -29,7 +29,7 @@ namespace PizzaStore
 
       return totalCalorie + GetToppingsCalorie();
     }
-    public double GetPrice()
+    public virtual double GetPrice()
     {
       double totalPrice = 0;
       if (size == PizzaSize.Family)

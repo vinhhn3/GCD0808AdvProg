@@ -6,18 +6,21 @@ namespace PizzaStore
   {
     static void Main(string[] args)
     {
-      var margheritaPizza = new MargheritaPizza(PizzaSize.Family);
+      var margheritaPizza = new MargheritaPizza(PizzaSize.Normal);
 
       Console.WriteLine("Price " + margheritaPizza.GetPrice());
       Console.WriteLine("Calorie " + margheritaPizza.GetCalorie());
 
       margheritaPizza.AddTopping(ToppingType.Cheese);
-      margheritaPizza.AddTopping(ToppingType.Onion);
-      margheritaPizza.AddTopping(ToppingType.Ham);
-      margheritaPizza.AddTopping(ToppingType.Pineapple);
 
-      Console.WriteLine("Price " + margheritaPizza.GetPrice());
-      Console.WriteLine("Calorie " + margheritaPizza.GetCalorie());
+      var salamiPizza = new SalamiPizza(PizzaSize.Family, margheritaPizza);
+
+      salamiPizza.AddTopping(ToppingType.Ham);
+
+      Console.WriteLine("Price " + salamiPizza.GetPrice());
+      Console.WriteLine("Calorie " + salamiPizza.GetCalorie());
+
+
 
       Console.ReadLine();
 
