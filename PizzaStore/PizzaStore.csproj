@@ -50,8 +50,10 @@
     <Compile Include="FranchiseType.cs" />
     <Compile Include="HawaiianPizza.cs" />
     <Compile Include="MargheritaPizza.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Pizza.cs" />
     <Compile Include="PizzaSize.cs" />
+    <Compile Include="PizzaType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SalamiPizza.cs" />

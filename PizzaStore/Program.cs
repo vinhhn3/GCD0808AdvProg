@@ -29,6 +29,13 @@ namespace PizzaStore
       Console.WriteLine("Price BigMac: " + bigMac.GetPrice());
       Console.WriteLine("Calorie BigMac: " + bigMac.GetCalorie());
 
+      var order = new Order();
+      order.AddDrink(DrinkType.Water);
+      order.AddFranchise(FranchiseType.Mug);
+      order.AddPizza(PizzaType.Hawaiian, PizzaSize.Family);
+
+      Console.WriteLine("Order Price: " + order.GetPrice());
+
 
 
       Console.ReadLine();
