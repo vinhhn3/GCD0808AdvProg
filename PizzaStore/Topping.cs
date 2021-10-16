@@ -3,8 +3,26 @@
   class Topping
   {
     private ToppingType _type;
-    public int _calorie { get; private set; }
-    public double _price { get; private set; }
+    private int _calorie;
+    private double _price;
+
+    public int Calorie
+    {
+      get
+      {
+        return _calorie;
+      }
+      private set { }
+    }
+
+    public double Price
+    {
+      get
+      {
+        return _price;
+      }
+      private set { }
+    }
 
     public Topping(ToppingType type)
     {
