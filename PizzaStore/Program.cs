@@ -24,6 +24,11 @@ namespace PizzaStore
 
       var shirt = new Franchise(FranchiseType.Shirt);
 
+      var bigMac = new BigMac(salamiPizza, drink);
+
+      Console.WriteLine("Price BigMac: " + bigMac.GetPrice());
+      Console.WriteLine("Calorie BigMac: " + bigMac.GetCalorie());
+
 
 
       Console.ReadLine();

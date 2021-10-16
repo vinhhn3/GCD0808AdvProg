@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BigMac.cs" />
     <Compile Include="Drink.cs" />
     <Compile Include="DrinkType.cs" />
     <Compile Include="Franchise.cs" />
