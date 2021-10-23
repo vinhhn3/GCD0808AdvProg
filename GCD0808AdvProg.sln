@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "AdapterPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaStore", "PizzaStore\PizzaStore.csproj", "{34A108BE-3ECF-4677-B9FB-FDEDC82CD359}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelManagementSystem", "HotelManagementSystem\HotelManagementSystem.csproj", "{83A7F9E2-5DED-49E5-9A23-AFFE06C68F01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{34A108BE-3ECF-4677-B9FB-FDEDC82CD359}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34A108BE-3ECF-4677-B9FB-FDEDC82CD359}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34A108BE-3ECF-4677-B9FB-FDEDC82CD359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A7F9E2-5DED-49E5-9A23-AFFE06C68F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A7F9E2-5DED-49E5-9A23-AFFE06C68F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A7F9E2-5DED-49E5-9A23-AFFE06C68F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A7F9E2-5DED-49E5-9A23-AFFE06C68F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
