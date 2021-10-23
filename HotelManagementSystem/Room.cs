@@ -20,6 +20,22 @@ namespace HotelManagementSystem
       private set { }
     }
 
+    public int Id
+    {
+      get
+      {
+        return _id;
+      }
+
+      private set { }
+    }
+
+    public bool IsBooked
+    {
+      get { return _isBooked; }
+      private set { }
+    }
+
     public Room(int id, decimal price, RoomType type)
     {
       _id = id;
@@ -31,7 +47,7 @@ namespace HotelManagementSystem
     public bool IsAvailable(DateTime startDate, DateTime endDate)
     {
       return (startDate < _startDate && endDate < _startDate) ||
-        (startDate > _endDate && endDate > _endDate);
+        (startDate > _endDate && endDate > _endDate) && !_isBooked;
     }
 
     public void Book(DateTime startDate, DateTime endDate)

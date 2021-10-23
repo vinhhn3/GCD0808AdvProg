@@ -5,7 +5,7 @@ namespace HotelManagementSystem
   class User
   {
     private string _fullName;
-    private ISearch _iSearch;
+    private IDatabase _iDatabase;
     public string FullName
     {
       get
@@ -15,15 +15,20 @@ namespace HotelManagementSystem
       private set { }
     }
 
-    public User(string fullName, ISearch iSearch)
+    public User(string fullName, IDatabase iDatabase)
     {
       _fullName = fullName;
-      _iSearch = iSearch;
+      _iDatabase = iDatabase;
     }
 
     public Room CheckAvailability(decimal price, DateTime startDate, DateTime endDate, RoomType type)
     {
-      return _iSearch.CheckAvailability(price, startDate, endDate, type);
+      return _iDatabase.CheckAvailability(price, startDate, endDate, type);
+    }
+
+    public void Book(int roomId, DateTime startDate, DateTime endDate, RoomType type)
+    {
+      _iDatabase.Book(roomId, startDate, endDate, type);
     }
   }
 }
