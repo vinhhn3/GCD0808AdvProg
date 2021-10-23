@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaStore", "PizzaStore\Pi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelManagementSystem", "HotelManagementSystem\HotelManagementSystem.csproj", "{83A7F9E2-5DED-49E5-9A23-AFFE06C68F01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineReservationSystem", "AirlineReservationSystem\AirlineReservationSystem.csproj", "{6E466E4C-4FD8-4EFD-9B15-42788593A5D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{83A7F9E2-5DED-49E5-9A23-AFFE06C68F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83A7F9E2-5DED-49E5-9A23-AFFE06C68F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83A7F9E2-5DED-49E5-9A23-AFFE06C68F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E466E4C-4FD8-4EFD-9B15-42788593A5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E466E4C-4FD8-4EFD-9B15-42788593A5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E466E4C-4FD8-4EFD-9B15-42788593A5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E466E4C-4FD8-4EFD-9B15-42788593A5D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
